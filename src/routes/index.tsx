@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from '@tanstack/react-router'
 import { ArrowDownRight } from 'lucide-react'
+import { BrandIcon } from '#/components/brand-icon'
 import { projects, technologyGroups } from '#/data/projects'
 
 export const Route = createFileRoute('/')({
@@ -59,7 +60,9 @@ function HomePage() {
                     <h2>{project.name}</h2>
                     <p>{project.discipline}</p>
                     <p className="work-summary">{project.summary}</p>
-                    <ul className="work-tags">{project.tags.map((tag) => <li key={tag}>{tag}</li>)}</ul>
+                    <ul className="project-brands" aria-label={`${project.name} technology stack`}>
+                      {project.brands.map((brand) => <li key={brand}><BrandIcon brand={brand} size={21} /></li>)}
+                    </ul>
                   </div>
                   <em>{project.proof}</em>
                 </article>
@@ -91,7 +94,7 @@ function HomePage() {
             <section key={group.label}>
               <h3>{group.label}</h3>
               <dl>
-                {group.tools.map(([tool, evidence]) => <div key={tool}><dt>{tool}</dt><dd>{evidence}</dd></div>)}
+                {group.tools.map(([brand, evidence]) => <div key={brand}><dt><BrandIcon brand={brand} size={25} /></dt><dd>{evidence}</dd></div>)}
               </dl>
             </section>
           ))}

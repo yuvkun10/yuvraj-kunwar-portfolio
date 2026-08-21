@@ -9,7 +9,8 @@ describe('portfolio project information', () => {
     for (const project of projects) {
       expect(project.name.length).toBeGreaterThan(3)
       expect(project.summary.length).toBeGreaterThan(60)
-      expect(project.tags.length).toBeGreaterThanOrEqual(4)
+      expect(project.brands.length).toBeGreaterThanOrEqual(3)
+      expect(new Set(project.brands).size).toBe(project.brands.length)
       expect(project.proof.length).toBeGreaterThan(5)
     }
   })

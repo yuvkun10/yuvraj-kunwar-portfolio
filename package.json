@@ -27,7 +27,8 @@
     "lucide-react": "^1.27.0",
     "nitro": "npm:nitro-nightly@3.0.1-20260820-230451-26928884",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0"
+    "react-dom": "^19.2.0",
+    "simple-icons": "16.28.0"
   },
   "devDependencies": {
     "@tanstack/router-cli": "^1.167.32",
@@ -38,7 +39,6 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^6.0.1",
     "jsdom": "^28.1.0",
-
     "typescript": "^6.0.2",
     "vite": "^8.0.0",
     "vitest": "^4.1.5"
