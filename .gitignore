@@ -1,5 +1,6 @@
 node_modules
 .output
+.nitro/
 dist
 .vinxi
 .tanstack
@@ -8,11 +9,16 @@ dist
 .env
 tmp/
 .agents/
+.claude/
 .gemini/
 .agent/
 _agents/
 _agent/
 brain/
+Certificates/
+Profile-hero.png
+Profile.pdf
+skills-lock.json
 * - Copy.png
 * - copy.png
 * - Copy (2).png
