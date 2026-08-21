@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yuvraj Kunwar - Resume</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Calibri', 'Segoe UI', Arial, sans-serif;
+      font-size: 9pt;
+      line-height: 1.25;
+      color: #1a1a1a;
+      width: 210mm;
+      min-height: 297mm;
+      padding: 10mm 14mm;
+      background: white;
+    }
+
+    /* Header */
+    .header { text-align: center; margin-bottom: 7px; border-bottom: 2px solid #1a1a1a; padding-bottom: 6px; }
+    .header h1 { font-size: 20pt; font-weight: 700; letter-spacing: 1px; margin-bottom: 2px; text-transform: uppercase; }
+    .header .tagline { font-size: 10pt; font-weight: 600; color: #333; margin-bottom: 4px; }
+    .header .contact-line { font-size: 8.5pt; color: #444; }
+    .header .contact-line a { color: #444; text-decoration: none; }
+    .header .contact-line span { margin: 0 4px; }
+
+    /* Section */
+    .section { margin-bottom: 5px; }
+    .section-title {
+      font-size: 10.5pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      border-bottom: 1px solid #999;
+      padding-bottom: 2px;
+      margin-bottom: 3px;
+      color: #1a1a1a;
+    }
+
+    /* Summary */
+    .summary { font-size: 9pt; color: #333; }
+
+    /* Entries */
+    .entry { margin-bottom: 4px; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-title { font-weight: 700; font-size: 9.5pt; }
+    .entry-date { font-size: 8.5pt; color: #555; white-space: nowrap; }
+    .entry-sub { display: flex; justify-content: space-between; align-items: baseline; }
+    .entry-org { font-style: italic; font-size: 9pt; color: #333; }
+    .entry-location { font-size: 8.5pt; color: #555; }
+
+    ul { margin-left: 16px; margin-top: 2px; }
+    ul li { font-size: 9pt; margin-bottom: 0; color: #222; }
+
+    /* Skills */
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 0; }
+    .skill-row { width: 100%; display: flex; margin-bottom: 2px; }
+    .skill-label { font-weight: 700; font-size: 9pt; min-width: 125px; }
+    .skill-value { font-size: 9pt; color: #333; }
+
+    /* Certs */
+    .cert-list { columns: 2; font-size: 8.5pt; color: #333; }
+    .cert-list li { margin-bottom: 1px; break-inside: avoid; }
+    .cert-list .cert-issuer { color: #666; }
+
+    @media print {
+      body { padding: 10mm 14mm; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Yuvraj Kunwar</h1>
+    <div class="tagline">AI Engineer | Full-Stack Systems | Cybersecurity</div>
+    <div class="contact-line">
+      Melbourne, VIC<span>|</span><a href="mailto:maddoxuv@gmail.com">maddoxuv@gmail.com</a><span>|</span><a href="https://linkedin.com/in/yuvraj-kunwar">linkedin.com/in/yuvraj-kunwar</a><span>|</span><a href="https://github.com/yuvkun10">github.com/yuvkun10</a>
+    </div>
+  </div>
+
+  <!-- SUMMARY -->
+  <div class="section">
+    <div class="section-title">Professional Summary</div>
+    <p class="summary">
+      AI Engineer at Dulcie Home Care with a completed Master of Information Technology and a background spanning full-stack product delivery and security operations. Owns technical delivery across AI systems, production software, internal tools, workflow automation, integrations, release, and support. Shipped work includes finance and operations platforms, OCR, RAG, and secure staff systems. Previously worked as a SOC Analyst with SIEM, SOAR, IDS/IPS, incident response, and vulnerability assessment.
+    </p>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div class="section">
+    <div class="section-title">Professional Experience</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">AI Engineer</div>
+        <div class="entry-date">March 2026 — Present</div>
+      </div>
+      <div class="entry-sub">
+        <div class="entry-org">Dulcie Home Care</div>
+        <div class="entry-location">Melbourne, VIC</div>
+      </div>
+      <ul>
+        <li>Progressed from Full Stack Developer intern to full-time AI Engineer, owning delivery from discovery and architecture through release and production support</li>
+        <li>Completed DulciePay and PennyPay finance platforms covering invoice intake, OCR review, community-scoped approvals, Lookout submission, ABA payments, reporting, and audit history</li>
+        <li>Built OCR and citation-backed RAG services with pgvector retrieval, human review, evaluation gates, masked tracing, and fail-closed access controls</li>
+        <li>Designed automations connecting Google Workspace, HubSpot, Workato, Slack, Lookout, and BigQuery; recognised as Employee of the Quarter in June 2026</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">SOC Analyst</div>
+        <div class="entry-date">Previous Role</div>
+      </div>
+      <div class="entry-sub">
+        <div class="entry-org">eSewa Nepal (Digital Payment Platform)</div>
+        <div class="entry-location">Nepal</div>
+      </div>
+      <ul>
+        <li>Operated SIEM and SOAR platforms for real-time threat detection and automated incident response</li>
+        <li>Managed IDS/IPS systems to prevent unauthorised access across payment infrastructure</li>
+        <li>Conducted vulnerability assessments and coordinated cross-functional incident response efforts</li>
+
+      </ul>
+    </div>
+  </div>
+
+  <!-- EDUCATION -->
+  <div class="section">
+    <div class="section-title">Education</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Master of Information Technology (Cybersecurity)</div>
+        <div class="entry-date">June 2025 — June 2026</div>
+      </div>
+      <div class="entry-org">Victorian Institute of Technology (VIT), Melbourne</div>
+      <ul><li>Completed June 2026</li></ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Master of Information Technology</div>
+        <div class="entry-date">Nov 2024 — June 2025</div>
+      </div>
+      <div class="entry-org">La Trobe University, Melbourne</div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Bachelor of Information Technology</div>
+        <div class="entry-date">Oct 2019 — Dec 2023</div>
+      </div>
+      <div class="entry-org">Nilai University, Malaysia</div>
+    </div>
+  </div>
+
+  <!-- TECHNICAL SKILLS -->
+  <div class="section">
+    <div class="section-title">Technical Skills</div>
+    <div class="skill-row"><span class="skill-label">Languages:</span><span class="skill-value">JavaScript, TypeScript, Python, SQL, HTML5, CSS3</span></div>
+    <div class="skill-row"><span class="skill-label">Frontend:</span><span class="skill-value">React 19, TanStack Start, TanStack Router/Query, Tailwind CSS, Shadcn/Base UI, React Native, Expo</span></div>
+    <div class="skill-row"><span class="skill-label">Backend &amp; Data:</span><span class="skill-value">Node.js, Hono, Express, REST APIs, Supabase, PostgreSQL, Prisma, Drizzle, pgvector</span></div>
+    <div class="skill-row"><span class="skill-label">Security:</span><span class="skill-value">SIEM, SOAR, IDS/IPS, Incident Response, Vulnerability Assessment, NIST CSF</span></div>
+    <div class="skill-row"><span class="skill-label">AI &amp; Operations:</span><span class="skill-value">OCR, RAG, LangChain/LangGraph, Ollama, Evaluation Gates, Tracing, Vercel, Render, Cloudflare, GitHub Actions</span></div>
+    <div class="skill-row"><span class="skill-label">Soft Skills:</span><span class="skill-value">Cross-functional Team Leadership, Project Management, Agile/Scrum</span></div>
+  </div>
+
+  <!-- KEY PROJECTS -->
+  <div class="section">
+    <div class="section-title">Key Projects</div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">DulciePay</div>
+        <div class="entry-date">AI Engineering &amp; Finance Operations</div>
+      </div>
+      <ul>
+        <li>Production operations platform for invoice intake, OCR review, community-scoped approvals, Lookout submission, ABA payments, and audit evidence</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">PennyPay</div>
+        <div class="entry-date">TypeScript &amp; Multi-Entity Finance</div>
+      </div>
+      <ul>
+        <li>Typed platform using TanStack Start, Hono, Supabase, local OCR/RAG, tiered approvals, Lookout submission, payment processing, and reconciliation</li>
+      </ul>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <div class="entry-title">Prompt Injection Detector</div>
+        <div class="entry-date">Open-Source AI Security</div>
+      </div>
+      <ul>
+        <li>TypeScript library, HTTP API, and CLI for local deterministic detection of prompt-injection and jailbreak attempts</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CERTIFICATIONS -->
+  <div class="section">
+    <div class="section-title">Certifications</div>
+    <ul class="cert-list">
+      <li>Fortinet Certified Associate in Cybersecurity <span class="cert-issuer">— Fortinet</span></li>
+      <li>ISC2 Certified in Cybersecurity <span class="cert-issuer">— ISC2</span></li>
+      <li>Microsoft Cybersecurity Analyst <span class="cert-issuer">— Microsoft</span></li>
+      <li>Google Cybersecurity Specialization <span class="cert-issuer">— Google</span></li>
+      <li>Cyber Incident Response <span class="cert-issuer">— Infosec</span></li>
+      <li>Building with the Claude API <span class="cert-issuer">— Anthropic</span></li>
+      <li>IBM RAG and Agentic AI <span class="cert-issuer">— IBM Skills Network</span></li>
+      <li>Threat Intelligence Fundamentals <span class="cert-issuer">— SOCRadar</span></li>
+    </ul>
+  </div>
+
+</body>
+</html>

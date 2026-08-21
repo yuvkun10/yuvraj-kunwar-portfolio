@@ -1,0 +1,46 @@
+{
+  "name": "yuvraj-portfolio",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.10.0",
+  "engines": {
+    "node": ">=24 <27",
+    "pnpm": ">=11 <12"
+  },
+  "imports": {
+    "#/*": "./src/*"
+  },
+  "scripts": {
+    "dev": "vite dev --host 127.0.0.1 --port 4173",
+    "generate-routes": "tsr generate",
+    "build": "vite build",
+    "start": "vite preview --host 0.0.0.0",
+    "preview": "vite preview --host 127.0.0.1 --port 4173",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "verify": "pnpm generate-routes && pnpm typecheck && pnpm test && pnpm build"
+  },
+  "dependencies": {
+    "@tanstack/react-router": "^1.170.31",
+    "@tanstack/react-start": "^1.168.48",
+    "lucide-react": "^1.27.0",
+    "nitro": "npm:nitro-nightly@3.0.1-20260820-230451-26928884",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@tanstack/router-cli": "^1.167.32",
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/react": "^16.3.0",
+    "@types/node": "^22.10.2",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^6.0.1",
+    "jsdom": "^28.1.0",
+
+    "typescript": "^6.0.2",
+    "vite": "^8.0.0",
+    "vitest": "^4.1.5"
+  }
+}

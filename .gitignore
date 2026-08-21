@@ -1,0 +1,23 @@
+node_modules
+.output
+dist
+.vinxi
+.tanstack
+.DS_Store
+*.log
+.env
+tmp/
+.agents/
+.gemini/
+.agent/
+_agents/
+_agent/
+brain/
+* - Copy.png
+* - copy.png
+* - Copy (2).png
+* - Copy (3).png
+* - copy (2).png
+* - copy (3).png
+
+.vercel
