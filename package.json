@@ -22,9 +22,9 @@
     "verify": "pnpm generate-routes && pnpm typecheck && pnpm test && pnpm build"
   },
   "dependencies": {
-    "@tanstack/react-router": "^1.170.31",
-    "@tanstack/react-start": "^1.168.48",
-    "lucide-react": "^1.27.0",
+    "@tanstack/react-router": "^1.170.32",
+    "@tanstack/react-start": "^1.168.49",
+    "lucide-react": "^1.34.0",
     "nitro": "npm:nitro-nightly@3.0.1-20260820-230451-26928884",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
