@@ -1,0 +1,30 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: monthly
+    time: '09:20'
+    timezone: Australia/Melbourne
+  open-pull-requests-limit: 5
+  groups:
+    npm-production-minor-patch:
+      applies-to: version-updates
+      dependency-type: production
+      patterns:
+      - "*"
+      update-types:
+      - minor
+      - patch
+    npm-development-minor-patch:
+      applies-to: version-updates
+      dependency-type: development
+      patterns:
+      - "*"
+      update-types:
+      - minor
+      - patch
+    npm-security:
+      applies-to: security-updates
+      patterns:
+      - "*"
